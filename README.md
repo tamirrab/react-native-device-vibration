@@ -1,13 +1,13 @@
 
-# react-native-vibration
+# react-native-device-vibration
 
 ## Getting started
 
-`$ npm install react-native-vibration --save`
+`$ npm install react-native-device-vibration --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-vibration`
+`$ react-native link react-native-device-vibration`
 
 ### Manual installation
 
@@ -15,7 +15,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-vibration` and add `RNVibration.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-device-vibration` and add `RNVibration.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNVibration.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -26,17 +26,17 @@
   - Add `new RNVibrationPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-vibration'
-  	project(':react-native-vibration').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-vibration/android')
+  	include ':react-native-device-vibration'
+  	project(':react-native-device-vibration').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-vibration/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-vibration')
+      compile project(':react-native-device-vibration')
   	```
 
 ## Usage
 ```javascript
-import RNVibration from 'react-native-vibration';
+import RNVibration from 'react-native-device-vibration';
 
 // TODO: What to do with the module?
 RNVibration;

@@ -1,8 +1,7 @@
-
 {
-  "name": "react-native-vibration",
+  "name": "react-native-device-vibration",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Getting started",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,9 +9,17 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": "Tamir Haim Rabia",
+  "license": "ISC",
   "peerDependencies": {
     "react-native": "^0.41.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamirrab/react-native-device-vibration.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tamirrab/react-native-device-vibration/issues"
+  },
+  "homepage": "https://github.com/tamirrab/react-native-device-vibration#readme"
 }
