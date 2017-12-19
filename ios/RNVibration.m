@@ -12,8 +12,6 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(vibrate:(NSUInteger *)vibrationMS)
 {
     
-    
-    
     NSMutableDictionary* dict = [NSMutableDictionary dictionary];
     NSMutableArray* arr = [NSMutableArray array ];
     
@@ -26,8 +24,11 @@ RCT_EXPORT_METHOD(vibrate:(NSUInteger *)vibrationMS)
     
     AudioServicesPlaySystemSoundWithVibration(4095,nil,dict);
     
-    
-    
+}
+
+
+RCT_EXPORT_METHOD(iOSvibrate:(NSUInteger *)vibrationStyle)
+{
     
     
     // 'Peek' feedback (weak boom)
@@ -46,11 +47,8 @@ RCT_EXPORT_METHOD(vibrate:(NSUInteger *)vibrationMS)
     NSUInteger failed = (1107);
     
     
-    AudioServicesPlaySystemSound(peek);
-    AudioServicesPlaySystemSound(pop);
-    AudioServicesPlaySystemSound(cancelled);
-    AudioServicesPlaySystemSound(tryAgain);
-    AudioServicesPlaySystemSound(failed);
+    AudioServicesPlaySystemSound(vibrationStyle);
+
     
     
 }
